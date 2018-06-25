@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock+SC|Roboto');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Overlock SC', cursive;
+    font-size: 30px;
+    color: #efefef;
+    background-color: #007AA3;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.taj-mahal{
+    height: 400px;
+}
