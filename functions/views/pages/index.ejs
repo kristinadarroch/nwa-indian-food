@@ -22,17 +22,21 @@
     <h1 class="hello">Indian Food of Northwest Arkansas</h1>
   </div>
 
-  <div class="home-boxes">
-    <div>
-      <img src="/img/curryPoint/curry-point-curry.png" alt="curry" class="curry-point-curry">
-    </div>
+  <% reviews.forEach((review) => { %>
+    <div class="home-boxes">
+      <div>
+        <img src="<%= review.imgUrl %>" alt="curry" class="curry-point-curry">
+      </div>
 
-    <div class="text">
-      <h1>Curry Point</h1>
-      <p>Bentonville, Arkansas</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur est blanditiis quis dolore optio cupiditate inventore quo distinctio ea ullam praesentium tempore, perspiciatis incidunt itaque unde magnam eligendi officia?</p>
-      <img src="/img/ratings-icon.svg" alt="ratings" class="ratings">
+      <div class="text">
+        <h1><%= review.name %></h1>
+        <p><%= review.location %></p>
+        <p><%= review.info %></p>
+        <% for (var i = 0; i < review.tajMahals; i++) { %>
+          <img src="/img/ratings-icon.svg" alt="ratings" class="ratings">
+        <% } %>
+      </div>
     </div>
-  </div>
+  <% }); %>
   </body>
 </html>

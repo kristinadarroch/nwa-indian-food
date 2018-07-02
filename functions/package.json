@@ -10,10 +10,10 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
-    "firebase-admin": "~5.12.1",
-    "firebase-functions": "^1.0.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.0.3",
     "sass": "^1.7.0"
   },
   "devDependencies": {
